@@ -77,9 +77,11 @@ const UploadForm = () => {
           <label>Formato desejado:</label>
           <select value={format} onChange={(e) => setFormat(e.target.value)}>
             <option value="mp4">MP4</option>
-            <option value="mp3">MP3</option>
-            <option value="avi">AVI</option>
-            <option value="mov">MOV</option>
+            <option value="mp3">MOV</option>
+            <option value="avi">WEBM</option>
+            <option value="mov">FLV</option>
+            <option value="mov">AIFF</option>
+            <option value="mov">AVI</option>
           </select>
         </div>
 
