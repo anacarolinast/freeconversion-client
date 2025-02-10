@@ -1,0 +1,135 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #12192c;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.upload-form-container {
+  max-width: 550px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1e2a47, #283b6a);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.upload-form-container h2 {
+  font-size: 28px;
+  margin-bottom: 22px;
+  color: #4db8ff;
+}
+
+.upload-form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #eaeaea;
+  text-align: left;
+}
+
+.upload-form-container input {
+  width: 95%;
+}
+
+.upload-form-container select {
+  width: 100%;
+}
+
+.upload-form-container input,
+.upload-form-container select {
+  padding: 14px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  outline: none;
+}
+
+.upload-form-container select {
+  cursor: pointer;
+}
+
+.upload-form-container button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4db8ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.upload-form-container button:hover {
+  background-color: #3399ff;
+}
+
+.upload-form-container button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.upload-form-container p {
+  margin-top: 12px;
+  font-size: 17px;
+  color: #4db8ff;
+}
+
+.upload-form-container input[type="file"] {
+  display: none; 
+}
+
+.upload-form-container .custom-file-upload {
+  width: 95%;
+  padding: 14px;
+  margin-bottom: 18px;
+  background-color: #4db8ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.upload-form-container .custom-file-upload:hover {
+  background-color: #3399ff;
+}
+
+@media (max-width: 600px) {
+  .upload-form-container {
+    max-width: 95%;
+    padding: 25px;
+  }
+
+  .upload-form-container h2 {
+    font-size: 24px;
+  }
+
+  .upload-form-container input,
+  .upload-form-container select {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .upload-form-container button {
+    font-size: 17px;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .upload-form-container {
+    max-width: 650px;
+  }
+}
